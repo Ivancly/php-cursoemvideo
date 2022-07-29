@@ -10,13 +10,13 @@
 <body>
     <div>
         <?php
-            // http://localhost/php-cursoemvideo/aula007/04-eleicoes.php?an=1989
-            $ano = $_GET["an"];
-            $idade = 2022 - $ano;
-            echo "Quem nasceu em $ano tem idade de $idade anos";
-            $tipo = ($idade < 18 || $idade > 64) ? "NÃO OBRIGATÓRIO" : "OBRIGATÓRIO";
-            echo "<br>E dessa forma seu voto é $tipo";
+            $valor = $_GET["valor"];
+            $raizQuadrada = sqrt($valor);
+            $raizQuadrada = number_format($raizQuadrada, "2");
+            echo "O valor enviado foi $valor";
+            echo "<br>E a raiz quadrada é $raizQuadrada";
         ?>
+        <p><a href="01-exercicio.html">Voltar</a></p>
     </div>
 </body>
 </html>
